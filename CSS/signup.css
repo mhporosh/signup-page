@@ -1,0 +1,133 @@
+.signup-title {
+  color: var(--primary);
+  margin-top: 50px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.google,
+.facebook {
+  display: inline-flex;
+  gap: 10px;
+  font-size: 13px;
+  align-items: center;
+  border: 1px solid var(--primary);
+  border-radius: 9px;
+  padding: 8px;
+}
+
+.signup-with {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0;
+  font-size: 18px;
+  color: var(--primary);
+}
+
+.divider::before,
+.divider::after {
+  height: 1px;
+  width: 30%;
+  background-color: var(--primary);
+  display: inline-block;
+}
+
+.divider::before {
+  content: "";
+  margin-right: 10px;
+}
+
+.divider::after {
+  content: " ";
+  margin-left: 10px;
+}
+
+form {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+
+input,
+input:focus {
+  border: 0;
+  border-bottom: 1px solid var(--primary);
+  outline: none;
+  font-size: 20px;
+}
+
+::placeholder {
+  color: var(--primary);
+  font-size: 15px;
+}
+
+button {
+  background-color: var(--primary);
+  color: white;
+  padding: 8px 0;
+  border: none;
+  border-radius: 9px;
+  font-size: 17px;
+}
+
+.login {
+  color: var(--primary);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.login > a {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.language {
+  user-select: none;
+}
+
+.language > div {
+  float: right;
+  color: var(--primary);
+  display: flex;
+  justify-content: end;
+  column-gap: 10px;
+  cursor: pointer;
+  fill: var(--primary);
+  padding-bottom: 10px;
+}
+
+.language ul {
+  list-style: none;
+  float: right;
+  border: 1px solid var(--primary);
+  display: none;
+  position: absolute;
+  right: 20px;
+  margin-top: 30px;
+  font-size: 10px;
+}
+.language ul li {
+  padding: 5px;
+  font-size: 15px;
+  color: var(--primary);
+}
+.language > ul li:hover {
+  background-color: rgb(203, 203, 203);
+}
+
+.show-language {
+  display: block!important;
+}
