@@ -1,9 +1,9 @@
-document.querySelector('.language').addEventListener('click',() => {
- const classes = document.querySelector(".language ul").classList;
+document.querySelector(".language").addEventListener("click", () => {
+  const classes = document.querySelector(".language ul").classList;
 
-  if(classes[0] === "show-language"){
+  if (classes[0] === "show-language") {
     classes.remove("show-language");
-  }else{
+  } else {
     classes.add("show-language");
   }
-})
+});
